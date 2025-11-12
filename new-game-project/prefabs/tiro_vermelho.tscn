@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fpyx7"]
 size = Vector2(16, 16)
 
-[node name="TiroVermelho" type="CharacterBody2D"]
+[node name="TiroVermelho" type="CharacterBody2D" groups=["tiros"]]
 script = ExtResource("1_4wayp")
 
 [node name="ColorRect" type="ColorRect" parent="."]

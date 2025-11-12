@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy0gagift1voa"]
+
+[ext_resource type="Script" uid="uid://bg5u0j2y1lkbu" path="res://scripts/gelo.gd" id="1_jwr3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75x0e"]
+size = Vector2(12, 48)
+
+[node name="Gelo" type="CharacterBody2D"]
+motion_mode = 1
+slide_on_ceiling = false
+wall_min_slide_angle = 0.0
+script = ExtResource("1_jwr3e")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -6.0
+offset_top = -24.0
+offset_right = 6.0
+offset_bottom = 24.0
+color = Color(0.6745098, 1, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_75x0e")

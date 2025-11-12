@@ -6,6 +6,7 @@ func _physics_process(delta: float) -> void:
 
 		if col.get_collider() != null:
 			queue_free()
-	velocity = Vector2(600,0)
+
+	velocity = Vector2(800,0)
 	
 	move_and_slide()
