@@ -11,5 +11,4 @@ func _physics_process(delta: float) -> void:
 
 	if hp < 1:
 		queue_free()
-	
 	move_and_slide()

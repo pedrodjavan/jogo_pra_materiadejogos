@@ -6,6 +6,7 @@
 size = Vector2(16, 16)
 
 [node name="TiroVermelho" type="CharacterBody2D" groups=["tiros"]]
+slide_on_ceiling = false
 script = ExtResource("1_4wayp")
 
 [node name="ColorRect" type="ColorRect" parent="."]

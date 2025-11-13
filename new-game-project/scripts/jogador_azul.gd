@@ -17,11 +17,12 @@ func _physics_process(delta: float) -> void:
 		tiro.position = Vector2(position.x + 25,position.y)
 		$Timer.start()
 
-	if Input.is_action_pressed("jogador_azul_construir") and uso_gelos > 0:
+	if Input.is_action_pressed("jogador_azul_construir") and $Timergelo.is_stopped() and uso_gelos > 0:
 		print_debug("jogador azul gelou")
 		var gelo = prefabs_gelo.instantiate()
 		get_tree().get_root().add_child(gelo)
-		gelo.position = Vector2(position.x + 25,position.y)
+		gelo.position = Vector2(position.x + 50,position.y)
+		$Timergelo.start()
 		uso_gelos -= 1
 
 	move_and_slide()
